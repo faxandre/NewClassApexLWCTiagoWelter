@@ -4,7 +4,7 @@
 //**Post recebe um wrapper com os campos em portugues */
 @RestResource(urlMapping = '/AulaDeApex/Accounts/*')
 
-global with sharing class AccountAPI {
+global with sharing class AccountAPI {  
 
     @HttpGet
     global static List<Account> getAccounts(){
