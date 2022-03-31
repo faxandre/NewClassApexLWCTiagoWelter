@@ -7,7 +7,7 @@
 global with sharing class AccountAPI {  
 
     @HttpGet
-    global static List<Account> getAccounts(){
+    global static List<Account> getAccounts(){ 
         List<Account> accountList =  new List<Account>();
 
         String asParamStr = RestContext.request.requestURI.substring(RestContext.request.requestURI.lastIndexOf('/')+1); //aqui eu vejo se a URL do ger tem parâmetro
